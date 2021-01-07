@@ -1,12 +1,8 @@
 # template-url
 
-Inogda nuzhno prisozdanii temy Wordpress
-poluchit' adres direktorii vnuti JS-fayla.
+Sometimes you need to get the root directory address inside the JS file when you create a Wordpress theme.
 
-Dlya etogo vnutri index.php (ili dr. Glavnogo fayla)
-vnutri tega golova dobv"avit' sl.konstruktsiyu
-Sometimes you need to create a Wordpress theme
-get the address of the directory inside the JS file.
+To do this, inside index.php (or other main file) inside the head tag, add the next construct
 
     <script type="text/javascript">
         var templateUrl = '<?= get_bloginfo("template_url"); ?>';
